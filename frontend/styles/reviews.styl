@@ -1,0 +1,79 @@
+.reviews
+  padding 80px 10px
+  background linear-gradient(to top, #d2cfcf 21%,#eee 53%, #fbfbfb 88%)
+  &_title
+    margin 10px 10px 70px
+    font-weight 900
+    font-size 36px
+    line-height 66px
+    text-align center
+    color #222323
+    opacity 0.76
+  &_item
+    max-width 750px
+    margin 0 auto 70px
+    &__img
+      position relative
+      height auto
+      &-wrap
+        width 170px
+        height 170px
+        margin 0 auto
+        border-radius 50%
+        overflow hidden
+      &--elon
+        width 294px
+        left -44px
+      &--satya
+        width 235px
+        left -31px
+      &--mark
+        width 194px
+        left -17px
+    &__name
+      font-family my_fonts_1
+      font-size  25px
+      line-height 41px
+      text-align center
+      color #AC0000
+    &__occupation
+      margin-bottom 40px
+      font-family my_fonts_1
+      font-size  25px
+      line-height 41px
+      text-align center
+      color #AC0000
+    &__text
+      font-weight 200
+      font-size 18px
+      line-height 25px
+      text-align justify
+      color #000000
+  &_btn
+    margin: 10px 20px
+    padding 5px 6%
+    font-size 18px
+    line-height 52.47
+    text-align center
+    color rgba(25, 145, 161, 1)
+    text-transform uppercase
+    text-decoration none
+    border 1px solid
+    transition all 1s ease
+    &:hover
+      color #fff
+      background rgba(25, 145, 161, 1)
+      border none
+    &-wrap
+      display flex
+      flex-direction row
+      justify-content center
+      margin 10px 10px 20px
+@media all and (max-width: 789px)
+  .reviews_item__text
+    padding 0 15%
+  .app_btn-wrap
+    flex-direction column
+@media all and (max-width: 599px)
+  .reviews_btn-wrap
+    flex-direction column
