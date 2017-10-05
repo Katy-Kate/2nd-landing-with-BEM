@@ -141,15 +141,18 @@ body {
   padding: 35px 20px;
 }
 .header-top .header_nav__item {
-  margin: 0 7px;
+  margin: 0 12px;
   padding: 7px 0;
   font-size: 16px;
   color: #fff;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition-duration: 0.35s;
 }
 .header-top .header_nav__item:hover {
-  border-bottom: 1px solid;
+  border-color: #fff;
 }
 .header-top .mob-menu-icon {
   display: none;
