@@ -19,7 +19,7 @@
         text-transform uppercase
         text-decoration none
         border-bottom 1px solid transparent
-        transition-duration .35s
+        transition-duration time_trans
         &:hover
           border-color #fff
     .mob-menu-icon
@@ -52,21 +52,24 @@
       display inline-block
       width 200px
       margin 25px 15px
-      padding 15px 10px
+      padding 12px 10px
       box-sizing border-box
-      font-size 18px
+      font-size 14px
       text-align center
-      color #EAEDF1
+      color #fff
       text-transform uppercase
       text-decoration none
-      border 1px solid
-      transition all 1s ease
+      border-top 1px solid rgba(255,255,255,0.84)
+      border-bottom 1px solid rgba(255,255,255,0.84)
+      border-radius 15px
+      box-shadow 0px 1px 0px darken(c_turquoise,10%)
+      transition-duration time_trans
       &--free
         float right
       &:hover
-        background-color #EAEDF1
-        color #5DDDD3
-        border none
+        background-color #fff
+        color darken(c_turquoise,30%)
+        border-color #fff
   &__img
     max-width 400px
     width 100%
@@ -145,6 +148,5 @@
       flex-direction column
       max-width 300px
       margin: 0 auto
-
 
 

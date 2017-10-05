@@ -189,23 +189,26 @@ body {
   display: inline-block;
   width: 200px;
   margin: 25px 15px;
-  padding: 15px 10px;
+  padding: 12px 10px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
-  color: #eaedf1;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid;
-  transition: all 1s ease;
+  border-top: 1px solid rgba(255,255,255,0.84);
+  border-bottom: 1px solid rgba(255,255,255,0.84);
+  border-radius: 15px;
+  box-shadow: 0px 1px 0px #43d8cc;
+  transition-duration: 0.35s;
 }
 .banner_content__btn--free {
   float: right;
 }
 .banner_content__btn:hover {
-  background-color: #eaedf1;
-  color: #5dddd3;
-  border: none;
+  background-color: #fff;
+  color: #26b6aa;
+  border-color: #fff;
 }
 .banner__img {
   max-width: 400px;
@@ -362,13 +365,13 @@ body {
   margin: 10px 20px;
   padding: 5px 6%;
   font-size: 18px;
-  line-height: 52.47;
+  line-height: 2.47;
   text-align: center;
   color: #1991a1;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid;
-  transition: all 1s ease;
+  transition-duration: 0.35s;
 }
 .app__btn:hover {
   color: #fff;
@@ -458,13 +461,13 @@ body {
   margin: 10px 20px;
   padding: 5px 6%;
   font-size: 18px;
-  line-height: 52.47;
+  line-height: 2.47;
   text-align: center;
   color: #1991a1;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid;
-  transition: all 1s ease;
+  transition-duration: 0.35s;
 }
 .reviews_btn:hover {
   color: #fff;
@@ -538,7 +541,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid;
-  transition: all 1s ease;
+  transition-duration: 0.35s;
 }
 .advantages__btn:hover {
   color: #fff;
@@ -573,7 +576,7 @@ body {
   box-sizing: border-box;
   border: 1px solid #828282;
   border-radius: 5px;
-  transition: all 1s ease;
+  transition-duration: 0.35s;
 }
 .plan_item__prise {
   font-weight: 900;
@@ -634,7 +637,7 @@ body {
   text-decoration: none;
   border: 1px solid;
   opacity: 0.8;
-  transition: all 1s ease;
+  transition-duration: 0.35s;
 }
 .plan_item__btn:hover {
   color: #fff;
@@ -726,7 +729,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid;
-  transition: all 1s ease;
+  transition-duration: 0.35s;
 }
 .support_form__btn-submit:hover {
   color: #fff;
@@ -761,7 +764,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid;
-  transition: all 1s ease;
+  transition-duration: 0.35s;
 }
 .footer__btn:hover {
   color: #5dddd3;
