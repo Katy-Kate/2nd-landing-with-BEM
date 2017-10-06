@@ -7,9 +7,12 @@
   &_title
     font-weight 900
     font-size 36px
+    text-transform uppercase
     line-height 66px
-    color  #222323
+    letter-spacing 4px
     text-align center
+    color #222323
+    text-shadow 0 1px 3px #cdcdce
     opacity 0.76
   &_item
     width 300px
@@ -36,35 +39,36 @@
       background #1A91A1
     &--turquoise
       background #5DDDD3
-  &__btn-wrap
-    display flex
-    justify-content center
-    flex-direction row
-    padding-top 70px
   &__btn
-    margin: 10px 20px
-    padding 5px 6%
-    font-size 18px
-    line-height 2.47
-    text-align center
-    color rgba(25, 145, 161, 1)
-    text-transform uppercase
-    text-decoration none
-    border 1px solid
-    transition-duration time_trans
-    &:hover
-      color #fff
-      background rgba(25, 145, 161, 1)
-      border none
-@media all and (max-width: 789px)
-
-  .app_item
-    width 100%
-    padding 40px 0
-    &__text
-      padding 0 15%
+    max-width 320px
+    width 40%
+    margin 10px 4%
     &-wrap
-      display block
-@media all and (max-width: 568px)
-  .app__btn-wrap
-    flex-direction column
+      display flex
+      justify-content center
+      flex-direction row
+      align-items center
+      padding-top 50px
+
+@media all and (max-width: w_sm)
+  .app
+    &_item
+      width 100%
+      padding 40px 0
+      &__text
+        padding 0 15%
+      &-wrap
+        display block
+    &__btn
+      &-wrap
+        padding-top 20px
+@media all and (max-width: 688px)
+  .app
+    padding 40px 10px
+    &__btn
+      width: 87%;
+      &-wrap
+        flex-direction column
+@media all and (max-width: w_xs)
+  .app
+    padding 60px 10px

@@ -1,13 +1,16 @@
 .reviews
   padding 80px 10px
-  background linear-gradient(to top, #d2cfcf 21%,#eee 53%, #fbfbfb 88%)
+  background bg-cont
   &_title
     margin 10px 10px 70px
     font-weight 900
     font-size 36px
+    text-transform uppercase
     line-height 66px
+    letter-spacing 4px
     text-align center
     color #222323
+    text-shadow 0 1px 3px #cdcdce
     opacity 0.76
   &_item
     max-width 750px
@@ -50,30 +53,24 @@
       text-align justify
       color #000000
   &_btn
-    margin: 10px 20px
-    padding 5px 6%
-    font-size 18px
-    line-height 2.47
-    text-align center
-    color rgba(25, 145, 161, 1)
-    text-transform uppercase
-    text-decoration none
-    border 1px solid
-    transition-duration time_trans
-    &:hover
-      color #fff
-      background rgba(25, 145, 161, 1)
-      border none
+    max-width: 320px;
+    width 40%
+    margin 10px 4%
     &-wrap
       display flex
       flex-direction row
       justify-content center
+      align-items center
       margin 10px 10px 20px
-@media all and (max-width: 789px)
+@media all and (max-width: w_sm)
   .reviews_item__text
     padding 0 15%
   .app_btn-wrap
     flex-direction column
-@media all and (max-width: 599px)
-  .reviews_btn-wrap
-    flex-direction column
+@media all and (max-width: w_xl)
+  .reviews
+    padding 40px 10px
+    &_btn
+      width: 87%;
+      &-wrap
+        flex-direction column
