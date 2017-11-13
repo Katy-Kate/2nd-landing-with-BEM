@@ -19,7 +19,8 @@ gulp.task('minify-css', function() {
         .pipe(sourcemaps.init())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('frontend'));
+        .pipe(gulp.dest('frontend'));watch
+
 });
 
 gulp.task('compress', function() {

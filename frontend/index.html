@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
-    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="images/favicons/manifest.json">
     <link rel="shortcut icon" href="images/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
@@ -20,7 +17,7 @@
     <link href="../node_modules/ng-dialog/css/ngDialog.css" rel="stylesheet" type="text/css">
     <link href="../node_modules/ng-dialog/css/ngDialog-theme-default.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="mod-menu-active.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width">
     <title>K E T</title>
   </head>
@@ -28,13 +25,26 @@
     <header class="header">
       <div class="header-top"><a href="#" class="header_logo"><img src="images/logo.png" class="header_logo__img"></a>
         <div class="header_nav"><a href="#about" class="header_nav__item">about</a><a href="#reviews" class="header_nav__item">reviews</a><a href="#features" class="header_nav__item">features</a><a href="#prices" class="header_nav__item">prices</a><a href="#support" class="header_nav__item">support</a></div>
-        <div class="mob-menu-icon"></div>
+        <div class="mobile-nav-button">
+          <div class="mobile-nav-button__line"></div>
+          <div class="mobile-nav-button__line"></div>
+          <div class="mobile-nav-button__line"></div>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#reviews">reviews</a></li>
+            <li><a href="#features">features</a></li>
+            <li><a href="#prices">prices</a></li>
+            <li><a href="#support">support</a></li>
+          </ul>
+        </div>
       </div>
       <h1 class="header_title">The great APP for your business!</h1>
       <div class="banner">
         <div class="banner_content">
           <p class="banner_content__text">We helps companies provide a great overall customer experience, and build customer relationships that are more meaningful, personal, and productive</p>
-          <div class="banner_content__btn-wrap"><a href="#" class="banner_content__btn btn btn-light">choose a plan</a><a href="#" class="banner_content__btn btn btn-light">try for free</a></div>
+          <div class="banner_content__btn-wrap"><a href="#" class="banner_content__btn btn btn-light--active">choose a plan</a><a href="#" class="banner_content__btn btn btn-light">try for free</a></div>
         </div>
         <div class="banner__img-wrap"><img src="images/banner.png" class="banner__img"></div>
       </div>
@@ -56,7 +66,7 @@
             <p class="app_item__text">A feature suite that gives you data and insights to build customer relationships that are more meaningful, personal, and productive.</p>
           </div>
         </div>
-        <div class="app__btn-wrap"><a href="#" class="app__btn btn btn-dark">take a tour</a><a href="#" class="app__btn btn btn-dark">get free demo access</a></div>
+        <div class="app__btn-wrap"><a href="#" class="app__btn btn btn-dark--active">take a tour</a><a href="#" class="app__btn btn btn-dark">get free demo access</a></div>
       </div>
       <div id="reviews" class="reviews">
         <h1 class="reviews_title">75,000+ Companies trust us</h1>
@@ -78,7 +88,7 @@
           <div class="reviews_item__occupation">CEO Facebook</div>
           <div class="reviews_item__text">Just as a bird, wherever it goes, flies with its wings as its only burden, so too, the bhikkhu becomes content with robes to protect his body and with almsfood to maintain his stomach, and wherever he goes he sets out taking only these with him.</div>
         </div>
-        <div class="reviews_btn-wrap"><a href="#" class="reviews_btn btn btn-dark">see more reviews</a><a href="#" class="reviews_btn btn btn-dark">leave a revies</a></div>
+        <div class="reviews_btn-wrap"><a href="#" class="reviews_btn btn btn-dark--active">see more reviews</a><a href="#" class="reviews_btn btn btn-dark">leave a revies</a></div>
       </div>
       <div id="features" class="advantages">
         <h1 class="advantages_title">Our advantages</h1>
@@ -145,10 +155,12 @@
     </content>
     <div class="footer"><a href="#" class="footer_logo"><img src="images/logo.png" class="footer_logo__img"></a>
       <div class="footer__btn-wrap">
-        <div class="footer__btn btn btn-light">choose a plan</div>
+        <div class="footer__btn btn btn-light--active">choose a plan</div>
         <div class="footer__btn btn btn-light">try for free</div>
       </div>
       <div class="footer_menu"><a href="#about" class="footer_menu__item">about</a><a href="#reviews" class="footer_menu__item">reviews</a><a href="#features" class="footer_menu__item">features</a><a href="#prices" class="footer_menu__item">prices</a><a href="#support" class="footer_menu__item">support</a></div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="mob-menu-active.js"></script>
   </body>
 </html>

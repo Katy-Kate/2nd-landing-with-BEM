@@ -22,8 +22,6 @@
         transition-duration time_trans
         &:hover
           border-color #fff
-    .mob-menu-icon
-      display none
   &_title
     margin-top 50px
     padding 10px 10px 35px 10px
@@ -59,6 +57,8 @@
   &__img
     max-width 325px
     width 100%
+.mobile-nav-button,.mobile-menu
+  display none
 @media all and (min-width: w_lg)
   .header
     &_title
@@ -124,18 +124,92 @@
         background rgba(38, 56, 45, 0.74)
         &__item
           padding 10px 10px
-    .mob-menu-icon
+  .mobile-menu
+    position absolute
+    top 0
+    right -100%
+    z-index 9998
+    display block
+    max-width 500px
+    width 100%
+    height 100vh
+    background #fff
+    transition 0.6s ease
+    opacity 0
+    ul
+      position relative
+      top 50%
+      padding 0
+      transform translateY(-50%)
+      li
+        list-style: none
+        a
+          position relative
+          display block
+          width: 100%
+          margin 0 auto
+          text-align center
+          text-decoration none
+          color c_blue
+          font-size 21px
+          line-height 39px
+          text-transform uppercase
+          overflow hidden
+          &:after
+            position absolute
+            right -100%
+            top 0
+            z-index -1
+            width 100%
+            height 100%
+            content ''
+            background: c_gray-text
+            transition 0.4s ease
+          &:hover
+            color #ffffff
+            &:after
+              right 0
+    img
       position absolute
-      top 25px
-      right 25px
+      left 50%
+      top 3rem
       display block
-      width 30px
-      height 30px
-      background rgba(30, 125, 117, 0.66)
-      &:active ~.header_nav
-        display flex!important
-    &_title
-      font-size 55px
+      width 150px
+      padding 0
+      text-align center
+      transform translatex(-50%)
+    &--open
+      right 0
+      opacity 1
+  .mobile-nav-button
+    position absolute
+    right 0
+    top 0
+    z-index 9999
+    display inherit
+    width 35px
+    height 30px
+    margin 2rem
+    cursor pointer
+    &__line
+      position relative
+      width 100%
+      height 4px
+      background c_orange
+      transition 1s ease
+      &:nth-of-type(2)
+        margin 0.5rem 0
+      &--1
+        position absolute
+        top 13px
+        transform rotate(45deg)
+      &--2
+        display none
+      &--3
+        position absolute
+        top 13px
+        transform rotate(135deg)
+
 @media all and (max-width: w_xs)
   .banner_content__btn
     margin 10px 20px
