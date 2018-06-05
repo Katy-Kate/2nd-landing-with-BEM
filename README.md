@@ -20,7 +20,7 @@ $ gulp watch (if you want to change something)
 After all dependencies will be install, and watcher is started, you can run index.html, see and change my test project
 
 ### Demo
-Demo is [here](http://alena.kernazhytskaya.s3-website-us-west-2.amazonaws.com/)
+Demo is [here](https://katy-kate.github.io/the-app/)
 
 ### Tech
 
@@ -32,12 +32,3 @@ This project uses a number of open source projects to work properly:
 * [Jade](http://jade-lang.com/) - Node template engine
 * [Stylus](http://stylus-lang.com/) - CSS preprocessor
 
-
-### Plugins
-
-Project is currently extended with the following plugins
-
-* [slick-carousel](http://kenwheeler.github.io/slick/)
-* [ng-dialog](https://github.com/likeastore/ngDialog)
-* [hamburgler](http://johnm.io/project/hamburgler/)
-* [jquery counter up](http://www.jqueryscript.net/animation/Animating-Numbers-Counting-Up-with-jQuery-Counter-Up-Plugin.html)
