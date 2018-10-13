@@ -11,7 +11,7 @@ $ npm i -g gulp
 ```
 
 ```sh
-$ git clone [https://github.com/divizionbyzero/forte.git]
+$ git clone [https://github.com/Katy-Kate/THE-APP.git]
 $ cd forte
 $ npm i -d
 $ gulp watch (if you want to change something)
